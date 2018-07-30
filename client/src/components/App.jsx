@@ -9,12 +9,28 @@ class App extends React.Component {
     super();
     this.state = {
       products: [],
+      page: 1,
     }
-    
+    this.maxPage = 1;
+    this.displayPrev = this.displayPrev.bind(this);
+    this.displayNext = this.displayNext.bind(this);
   }
 
   componentDidMount() {
     this.setState({ products: example });
+    this.maxPage = Math.ceil(example.length / 7);
+  }
+
+  displayPrev() {
+    if (this.state.page !== 1) {
+      this.setState({ page: this.state.page - 1 });
+    }
+  }
+
+  displayNext() {
+    if (this.state.page !== this.maxPage) {
+      this.setState({ page: this.state.page + 1 });
+    }
   }
 
   render() {
@@ -32,7 +48,7 @@ class App extends React.Component {
           </div>
           <div class={ styles.carousel }>
             <div class={ styles.left }>
-              <a class={ styles.button } href="#">
+              <a class={ styles.button } onClick={ this.displayPrev } href="#">
                 <span class={ styles["button-inner"]}>
                   <i class={ `${ styles.icon } ${ styles.previous }` }></i>
                 </span>
@@ -40,12 +56,12 @@ class App extends React.Component {
             </div>
             <div class={ styles.center }>
               <ol>
-                { this.state.products.map(product => 
-                  <Product product={product} />) }
+                { this.state.products.slice((this.state.page - 1) * 7, this.state.page * 7)
+                  .map(product => <Product product={product} />) }
               </ol>
             </div>
             <div class={ styles.right }>
-              <a class={ styles.button } href="#">
+              <a class={ styles.button } onClick={ this.displayNext } href="#">
                 <span class={ styles["button-inner"]}>
                   <i class={ `${ styles.icon } ${ styles.next }` }></i>
                 </span>
