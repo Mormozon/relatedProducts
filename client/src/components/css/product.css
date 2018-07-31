@@ -1,43 +1,43 @@
-.card {
+:local(.card) {
   display: inline-block;
   margin-left: 13px;
   vertical-align: top;
   width: 160px;
 }
 
-.link {
+:local(.link) {
   text-decoration: none;
 }
 
-img {
+:local(.image) {
   max-width: 100%;
 }
 
-.imgBlock {
+:local(.imgBlock) {
   size: 160px;
 }
 
-.name {
+:local(.name) {
   color: #0066c0;
   font-size: 15px;
 }
 
-.name:hover {
+:local(.name:hover) {
   color: #c60;
   text-decoration: underline;
 }
 
-.review {
+:local(.review) {
   line-height: 0;
   height: 19px;
 }
 
-.averageRating {
+:local(.averageRating) {
   box-sizing: border-box;
   height: 19px;
 }
 
-.icon-stars {
+:local(.icon-stars) {
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-7233320d393c05a5508cf7d579641c4b327cbda4._V2_.png);
   background-size: 400px 900px;
   background-repeat: no-repeat;
@@ -49,51 +49,51 @@ img {
   box-sizing: border-box;
 }
 
-.stars-5 {
+:local(.stars-5) {
   background-position: -5px -368px;
 }
 
-.stars-4 {
+:local(.stars-4) {
   background-position: -21px -368px;
 }
 
-.stars-3 {
+:local(.stars-3) {
   background-position: -37px -368px;
 }
 
-.stars-2 {
+:local(.stars-2) {
   background-position: -53px -368px;
 }
 
-.stars-1 {
+:local(.stars-1) {
   background-position: -69px -368px;
 }
 
-.stars-0 {
+:local(.stars-0) {
   background-position: -85px -368px;
 }
 
-.stars-4-5 {
+:local(.stars-4-5) {
   background-position: -175px -368px;
 }
 
-.stars-3-5 {
+:local(.stars-3-5) {
   background-position: -191px -368px;
 }
 
-.stars-2-5 {
+:local(.stars-2-5) {
   background-position: -207px -368px;
 }
 
-.stars-1-5 {
+:local(.stars-1-5) {
   background-position: -223px -368px;
 }
 
-.stars-0-5 {
+:local(.stars-0-5) {
   background-position: -239px -368px;
 }
 
-a.count {
+:local(.count) {
   color: #0066c0;
   font-size: 14px;
   line-height: 1;
@@ -102,15 +102,15 @@ a.count {
   margin-left: 3px;
 }
 
-.count:hover {
+:local(.count:hover) {
   color: #c60;
 }
 
-.price {
+:local(.price) {
   box-sizing: border-box;
 }
 
-.price a{
+:local(.price a){
   color: #b12704;
   font-size: 15px;
   font-weight: 400;

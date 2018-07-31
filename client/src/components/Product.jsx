@@ -8,20 +8,20 @@ const Product = (props) => {
   const item = props.product.name.split(' ')[2];
   
   return (
-    <li class={ styles.card }>
-      <a class={styles.link } href="#">
-        <div class={ styles.imgBlock }>
-          <img src={`https://fakeimg.pl/350x200/?text=${item}`}></img>
+    <li className={ styles.card }>
+      <a className={styles.link } href="#">
+        <div className={ styles.imgBlock }>
+          <img className={ styles.image }src={`https://fakeimg.pl/350x200/?text=${item}`}></img>
         </div>
-        <div class={ styles.name }>{ props.product.name }</div>
+        <div className={ styles.name }>{ props.product.name }</div>
       </a>
-      <div class={ styles.review }>
-        <a class={ styles.averageRating } href="#">
-          <i class={ `${ styles["icon-stars"] } ${ styles[stars] }` } title={ `${ props.product.average_rating } out of 5 stars` }></i>
+      <div className={ styles.review }>
+        <a className={ styles.averageRating } href="#">
+          <i className={ `${ styles["icon-stars"] } ${ styles[stars] }` } title={ `${ props.product.average_rating } out of 5 stars` }></i>
         </a>
-        <a class={ styles.count } href="#">{ props.product.reviews }</a>
+        <a className={ styles.count } href="#">{ props.product.reviews }</a>
       </div>
-      <div class={ styles.price }>
+      <div className={ styles.price }>
         <a href="#">${ props.product.price }</a>
       </div>
     </li>

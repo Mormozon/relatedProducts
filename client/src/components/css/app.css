@@ -1,4 +1,4 @@
-.container {
+:local(.container) {
   margin-bottom: 22px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   width: 100%;
@@ -6,12 +6,12 @@
   justify-content: center;
 }
 
-.inner {
+:local(.inner) {
   flex-grow: 1;
   max-width: 1500px;
 }
 
-.moduleDivider {
+:local(.moduleDivider) {
   background: 0 0;
   border: 0;
   border-top: 1px solid #ccc;
@@ -20,22 +20,22 @@
 
 }
 
-.header {
+:local(.header) {
   height: 40px;
 }
 
-.header .text {
+:local(.header .text) {
   float: left;
   min-height: 1px;
   width: 65%;
 }
 
-.header .page {
+:local(.header .page) {
   float: right;
   width: 32%;
 }
 
-h2 {
+:local(.sign) {
   color: #c60;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 16px;
@@ -44,20 +44,20 @@ h2 {
   padding: 0;
 }
 
-span {
+:local(.pageDisplay) {
   float: right;
 }
 
-.page {
+:local(.page) {
   font-size: 14px;
 }
 
-.carousel {
+:local(.carousel) {
   display: inline-flex;
   width: 100%;
 }
 
-.left {
+:local(.left) {
   position: relative;
   top: 0;
   left: 0;
@@ -67,7 +67,7 @@ span {
   box-sizing: border-box;
 }
 
-.button {
+:local(.button) {
   background-color: #e7e9ec;
   border: 1px solid #adb1b8;
   border-radius: 3px;
@@ -78,13 +78,13 @@ span {
   top: 40%;
 }
 
-.button-inner {
+:local(.button-inner) {
   background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);
   padding: 6px;
   display: block;
 }
 
-.icon {
+:local(.icon) {
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-7233320d393c05a5508cf7d579641c4b327cbda4._V2_.png);
   background-size: 400px 900px;
   background-repeat: no-repeat;
@@ -96,27 +96,27 @@ span {
   box-sizing: border-box;
 }
 
-.previous {
+:local(.previous) {
   margin: 5px 6px 5px 5px;
   width: 11px;
   height: 15px;
   background-position: -123px -7px;
 }
 
-.next {
+:local(.next) {
   margin: 5px 5px 5px 6px;
   width: 11px;
   height: 15px;
   background-position: -105px -7px;
 }
 
-.center {
+:local(.center) {
   margin-left: 10px;
   margin-right: 10px;
   flex-grow: 1;
 }
 
-ol {
+:local(ol) {
   list-style: none;
   display: inline-flex;
   flex-wrap: nowrap;
@@ -125,7 +125,7 @@ ol {
   padding: 0;
 }
 
-.right {
+:local(.right) {
   position: relative;
   top: 0;
   right: 0;

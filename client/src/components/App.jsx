@@ -44,35 +44,35 @@ class App extends React.Component {
 
   render() {
     return (
-      <div class={ styles.container }>
-        <div class={ styles.inner }>
-          <hr class={ styles.moduleDivider }></hr>
-          <div class={ styles.header }>
-            <div class={ styles.text }>
-              <h2>Customers who viewed this item also viewed</h2>
+      <div className={ styles.container }>
+        <div className={ styles.inner }>
+          <hr className={ styles.moduleDivider }></hr>
+          <div className={ styles.header }>
+            <div className={ styles.text }>
+              <h2 className={ styles.sign }>Customers who viewed this item also viewed</h2>
             </div>
-            <div class={ styles.page }>
-              <span>{`Page ${this.state.page} of ${this.maxPage}`}</span>
+            <div className={ styles.page }>
+              <span className={ styles.pageDisplay}>{`Page ${this.state.page} of ${this.maxPage}`}</span>
             </div>
           </div>
-          <div class={ styles.carousel }>
-            <div class={ styles.left }>
-              <a class={ styles.button } onClick={ this.displayPrev } href="#">
-                <span class={ styles["button-inner"]}>
-                  <i class={ `${ styles.icon } ${ styles.previous }` }></i>
+          <div className={ styles.carousel }>
+            <div className={ styles.left }>
+              <a className={ styles.button } onClick={ this.displayPrev } href="#">
+                <span className={ styles["button-inner"]}>
+                  <i className={ `${ styles.icon } ${ styles.previous }` }></i>
                 </span>
               </a>
             </div>
-            <div class={ styles.center }>
+            <div className={ styles.center }>
               <ol>
                 { this.state.products.slice((this.state.page - 1) * 7, this.state.page * 7)
                   .map(product => <Product product={product} />) }
               </ol>
             </div>
-            <div class={ styles.right }>
-              <a class={ styles.button } onClick={ this.displayNext } href="#">
-                <span class={ styles["button-inner"]}>
-                  <i class={ `${ styles.icon } ${ styles.next }` }></i>
+            <div className={ styles.right }>
+              <a className={ styles.button } onClick={ this.displayNext } href="#">
+                <span className={ styles["button-inner"]}>
+                  <i className={ `${ styles.icon } ${ styles.next }` }></i>
                 </span>
               </a>
             </div>
