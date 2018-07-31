@@ -28,16 +28,18 @@ class App extends React.Component {
     
   }
 
-  displayPrev() {
+  displayPrev(e) {
     if (this.state.page !== 1) {
       this.setState({ page: this.state.page - 1 });
     }
+    e.preventDefault();
   }
 
-  displayNext() {
+  displayNext(e) {
     if (this.state.page !== this.maxPage) {
       this.setState({ page: this.state.page + 1 });
     }
+    e.preventDefault();
   }
 
   render() {
