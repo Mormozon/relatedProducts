@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Product from './Product.jsx';
 import styles from './css/app.css';
+import axios from 'axios';
 import { example } from '../dummyData.js';
 
 class App extends React.Component {
@@ -17,8 +18,14 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({ products: example });
-    this.maxPage = Math.ceil(example.length / 7);
+    axios.get('/api/related')
+      .then(res => {
+        this.maxPage = Math.ceil(res.data.length / 7);
+        this.setState({ products: res.data });
+      }) 
+      .catch(err => console.error(err));
+    //this.setState({ products: example });
+    
   }
 
   displayPrev() {
