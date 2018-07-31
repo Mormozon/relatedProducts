@@ -50,7 +50,7 @@ class App extends React.Component {
               <h2>Customers who viewed this item also viewed</h2>
             </div>
             <div class={ styles.page }>
-              <span>Page 1 of 10</span>
+              <span>{`Page ${this.state.page} of ${this.maxPage}`}</span>
             </div>
           </div>
           <div class={ styles.carousel }>
