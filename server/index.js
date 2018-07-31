@@ -3,7 +3,6 @@ const path = require('path');
 const bodyParser = require('body-parser');
 //const faker = require('faker');
 //const gen = require('../dataGenerator.js');
-//const sequelize = require('../db/index');
 const Product = require('../db/model.js');
 
 const app = express();
@@ -28,7 +27,7 @@ app.get('/api/related', function(req, res) {
 
 
 // app.get('/check', function(req, res) {
-//   Product.findAll().then(items => console.log('----------', items.length)); //items => items.forEach(item => console.log(item.dataValues))
+//   Product.findAll().then(items => console.log('----------', items.length); res.status(200).end()); //items => items.forEach(item => console.log(item.dataValues))
 // })
 
 
