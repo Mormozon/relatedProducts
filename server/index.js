@@ -1,8 +1,6 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
-//const faker = require('faker');
-//const gen = require('../dataGenerator.js');
 const Product = require('../db/model.js');
 
 const app = express();
@@ -17,18 +15,10 @@ app.get('/api/related', function(req, res) {
   });
 });
 
-// app.get('/fake', function(req, res) {
-//   const data = gen();
-//   Product.sync({force: true}).then(function() {
-//     data.forEach(model => Product.create(model));
-//   })
-//     .then(function() { console.log('ok'); res.status(200).end(); });
-// })
 
 
-// app.get('/check', function(req, res) {
-//   Product.findAll().then(items => console.log('----------', items.length); res.status(200).end()); //items => items.forEach(item => console.log(item.dataValues))
-// })
+require('../dataGenerator.js'); //comment this line to stop generating fake data
+
 
 
 app.listen(1337, function() {console.log('--Server Activated--')});

@@ -1,6 +1,6 @@
 const { username, password } = require('../config.js');
-
 const Sequelize = require('sequelize');
+
 const sequelize = new Sequelize('related_products', username, password, {
   host: 'localhost',
   dialect: 'postgres',
