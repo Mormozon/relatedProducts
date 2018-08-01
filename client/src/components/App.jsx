@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Product from './Product.jsx';
 import styles from './css/app.css';
 import axios from 'axios';
-import { example } from '../dummyData.js';
 
 class App extends React.Component {
   constructor() {
@@ -24,8 +23,6 @@ class App extends React.Component {
         this.setState({ products: res.data });
       }) 
       .catch(err => console.error(err));
-    //this.setState({ products: example });
-    
   }
 
   displayPrev(e) {
