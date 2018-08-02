@@ -16,6 +16,14 @@ const sequelize = new Sequelize('related_products', username, password, {
 });
 
 sequelize.authenticate()
-  .then(function() {console.log('sequelize successful')})
+  .then(function() {
+    console.log(
+      '       ....\n',
+      '      |  |\n',
+      '     ......\n',
+      '\\    ( \'x\')        sequelize sequentially sequenced.\"\n',
+      ' \\(      )                              -tophat cat\n',
+      '   VV  VV');
+  })
   .catch(function(err) {console.log('sequelize failed', err)});
 module.exports = sequelize;

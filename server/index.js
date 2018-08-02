@@ -21,5 +21,11 @@ require('../dataGenerator.js'); //comment this line to stop generating fake data
 
 
 
-app.listen(1337, function() {console.log('--Server Activated--')});
+app.listen(1337, function() {
+  console.log(
+    '       A..A      \"Meownsieur,\n',
+    '\\    ( \'x\')        related product server is up and running.\"\n',
+    ' \\(      )                                       -french cat\n',
+    '   VV  VV');
+});
 
