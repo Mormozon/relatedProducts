@@ -104,6 +104,7 @@
 
 :local(.count:hover) {
   color: #c60;
+  text-decoration: none;
 }
 
 :local(.price) {
