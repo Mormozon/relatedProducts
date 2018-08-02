@@ -21,8 +21,8 @@ sequelize.authenticate()
       '       ....\n',
       '      |  |\n',
       '     ......        Sequelize sequentially sequenced.\"\n',
-      '\\    ( \'x\')          Meowvelous!\n',
-      ' \\(      )                              -tophat cat\n',
+      '\\    ( \'xQ)          Meowvelous!\n',
+      ' \\(      )                              -sir cat\n',
       '   VV  VV');
   })
   .catch(function(err) {console.log('sequelize failed', err)});
