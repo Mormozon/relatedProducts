@@ -20,8 +20,8 @@ sequelize.authenticate()
     console.log(
       '       ....\n',
       '      |  |\n',
-      '     ......\n',
-      '\\    ( \'x\')        sequelize sequentially sequenced.\"\n',
+      '     ......        Sequelize sequentially sequenced.\"\n',
+      '\\    ( \'x\')          Meowvelous!\n',
       ' \\(      )                              -tophat cat\n',
       '   VV  VV');
   })
