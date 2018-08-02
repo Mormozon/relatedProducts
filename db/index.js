@@ -20,9 +20,9 @@ sequelize.authenticate()
     console.log(
       '       ....\n',
       '      |  |\n',
-      '     ......        Sequelize sequentially sequenced.\"\n',
-      '\\    ( \'xQ)          Meowvelous!\n',
-      ' \\(      )                              -sir cat\n',
+      '     ......        \"Sequelize sequentially sequenced.\n',
+      '\\    ( \'xQ)          Meowvelous!\"\n',
+      ' \\(      )                                -sir cat\n',
       '   VV  VV');
   })
   .catch(function(err) {console.log('sequelize failed', err)});
